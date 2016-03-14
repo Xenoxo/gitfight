@@ -10,8 +10,6 @@ var ResultsContainer = React.createClass({
 		};
 	},
 	componentDidMount: function() {
-		// console.log('this in ResultsContainer' + this.props);
-	 //  console.log('this in ResultsContainer' + this.props.location.state.playersInfo);
 		githubHelpers.battle(this.props.location.state.playersInfo)
 			.then(function (scores){
 				this.setState({
